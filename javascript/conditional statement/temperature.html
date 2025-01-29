@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Temperature Converter</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+
+        var from = prompt('Enter the from value eg:- Fahrenheit, Celsius, Kelvin');
+        var to   = prompt('Enter the to Value eg:- Fahrenheit, Celsius, Kelvin');
+        var convertValue   = Number(prompt('Enter the value'));
+
+        if(from == 'Celsius' && to == 'Fahrenheit'){
+            var output = (convertValue * 9/5) + 32;
+        } else if(from == 'Fahrenheit' && to == 'Celsius'){
+            var output = (convertValue - 32) * 5/9;
+        }
+
+        document.write(output);
+        
+
+    </script>
+</html>

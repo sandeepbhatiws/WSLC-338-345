@@ -1,0 +1,29 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	/*body{
+		background-color: red;
+	}*/
+}
+
+@media only screen and (min-width: 427px) and (max-width: 768px){
+	/*body{
+		background-color: green;
+	}*/
+
+	.box{
+		flex-basis: 48%;
+		margin: 1%;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 426px){
+	/*body{
+		background-color: blue;
+	}*/
+	.outer{
+		flex-direction: column;
+	}
+	/*.box{
+		flex-basis: 98%;
+		margin: 1%;
+	}*/
+}

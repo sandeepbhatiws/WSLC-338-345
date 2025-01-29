@@ -1,0 +1,93 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+}
+.main{
+	width: 100%;
+}
+.header-outer{
+	width: 100%;
+	box-shadow: 0px 1px 5px 0px gray;
+}
+.header{
+	max-width: 1170px;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 22px;
+}
+.header_right{
+	display: flex;
+	gap: 10px;
+}
+.chat_outer{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding: 10px 18px;
+	border-radius: 8px;
+	opacity: 0px;
+	border: 1px solid #27AE60;
+	box-shadow: 0px 1px 2px 0px #1018280D;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	color: #27AE60;
+}
+.logo img{
+	flex-basis: 204px;
+}
+.chat_icon{
+	margin-top: 6px;
+}
+.call{
+	padding: 10px 18px;
+	border-radius: 8px;
+	opacity: 0px;
+	background: linear-gradient(93.77deg, #0ACEFE -6.36%, #2699FB 50.16%);
+	border-image-source: linear-gradient(93.77deg, #0ACEFE -6.36%, #2699FB 50.16%);
+	box-shadow: 0px 1px 2px 0px #1018280D;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: left;
+	color: white;
+}
+.number-outer{
+	width: 100%;
+	padding: 22px;
+	box-sizing: border-box;
+}
+.numbers{
+	max-width: 1170px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 15px;
+/*	margin-top: 15px;*/
+	box-sizing: border-box;
+	border-radius: 8px;
+	opacity: 0px;
+	box-shadow: 0px 0px 5px -2px #002F58;
+}
+.number_content h2{
+	font-family: Inter;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36.31px;
+	text-align: left;
+	color: #2699FB;
+}
+.number_content p{
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	color: #43505B;
+}

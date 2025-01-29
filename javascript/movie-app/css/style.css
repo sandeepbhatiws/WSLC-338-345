@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.row{
+    width: 1300px;
+    margin: auto;
+}
+.row h1{
+    text-align: center;
+    padding: 25px;
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movieContent{
+    flex-basis: 23%;
+    margin: 1%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.content h2{
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+}
+.content p{
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.inputBox{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Margin Padding</title>
+	<style type="text/css">
+		.row{
+			width: 600px;
+			height: 600px;
+			border: 1px solid red;
+			margin: auto;
+		}
+		.column1{
+			width: 200px;
+			height: 200px;
+			/*float: left;*/
+			border: 1px solid black;
+			margin-top: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+			margin-bottom: 15px;
+			margin: auto;
+		}
+		.column2{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			float: right;
+			/*margin-top: 10px;
+			margin-left: 15px;
+			margin-right: 20px;
+			margin-bottom: 25px;*/		
+			/*margin: 20px;*/
+			/*margin: 20px 30px;*/
+			margin: 10px 20px 30px 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="column1"></div>
+	</div>
+	<div class="row">
+		<div class="column2"></div>
+		<div class="column2"></div>
+	</div>
+</body>
+</html>

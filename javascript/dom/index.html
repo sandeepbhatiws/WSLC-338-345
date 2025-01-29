@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods</title>
+</head>
+<body>
+    <div class="row" id="row">
+        <div class="column" id="column">
+            1. <b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="column" id="column">
+            2. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="column" id="column">
+            3. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+    </div>
+
+    <script>
+        // var data = document.getElementById('column').innerHTML;
+        // console.log(data);
+
+        // var data1 = document.getElementById('column').innerText;
+        // console.log(data1);
+
+        // document.getElementById('column3').innerText = data;
+
+
+
+        // var data = document.getElementsByClassName('column');
+        // data[2].innerText = data[0].innerText;
+        // console.log(data[0].innerText);
+
+        // var data = document.getElementsByTagName('div');
+        // // data[2].innerText = data[0].innerText;
+        // console.log(data);
+
+        // var data = document.querySelector('#column');
+        // console.log(data);
+
+        var data = document.querySelectorAll('#column');
+        console.log(data);
+
+    </script>
+</body>
+</html>

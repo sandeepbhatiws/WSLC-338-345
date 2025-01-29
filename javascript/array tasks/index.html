@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Array Tasks</title>
+    </head>
+    <body>
+        
+        <script>
+            var numbers = [3, 7, 12, 5, 9];
+            var sum = 0;
+
+
+            // for(var i = 0; i < numbers.length; i++){
+            //     // sum = sum + numbers[i];  
+                
+            //     sum += numbers[i]   // sum = sum + numbers[i];  
+            // }
+
+            // for(var data of numbers){
+            //     sum += data;
+            // }
+
+            for(var data in numbers){
+                sum += numbers[data];
+            }
+
+            console.log(sum);
+        </script>
+    </body>
+</html>

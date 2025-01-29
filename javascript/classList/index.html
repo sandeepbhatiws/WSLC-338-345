@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List</title>
+    <style>
+        .row{
+            margin-top: 25px;
+        }
+        .column{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="addClass()">Add</button>
+    <button onclick="removeClass()">Remove</button>
+    <button onclick="toggleClass()">Toggle</button>
+
+    <div class="row">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio doloribus itaque, minus tempore dicta perspiciatis culpa minima omnis, qui rerum consectetur ex error est modi velit laborum reprehenderit nisi.
+    </div>
+
+    <script>
+        function addClass(){
+            document.querySelector('.row').classList.add('column row2 row3');
+        }
+
+        // addClass();
+        function removeClass(){
+            document.querySelector('.row').classList.remove('column');
+        }
+        function toggleClass(){
+            document.querySelector('.row').classList.toggle('column');
+        }
+    </script>
+</body>
+</html>

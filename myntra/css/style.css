@@ -1,0 +1,134 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+body{
+	font-family: "Roboto", sans-serif;
+}
+.main{
+	width: 100%;
+}
+.header{
+	background: white;
+	width: 100%;
+	box-shadow: 0px 1px 5px 0px gray;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 60px;
+	box-sizing: border-box;
+	align-items: center;
+}
+.menu ul{
+	display: flex;
+	list-style: none;
+}
+.header_right{
+	display: flex;
+	text-align: center;
+	font-size: 12px;
+	gap: 25px;
+	font-weight: bold;
+}
+.header_right svg{
+	font-size: 18px;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+.logo img{
+	width: 55px;
+}
+.menu ul li{
+	padding: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #282C3F;
+	font-size: 14px;
+}
+.search_box{
+	flex-basis: 35%;
+	background-color: #F5F5F6;
+	padding: 10px 15px;
+	color: gray;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.search_box input{
+	width: 90%;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: #F5F5F6;
+	margin-left: 10px;
+	outline: none;
+	border: 0px;
+}
+.discount_section{
+	border: 0px solid black;
+	display: flex;
+	padding: 20px 70px;
+	box-sizing: border-box;
+}
+.discount_section img{
+	flex-grow: 1;
+}
+.sale_offer{
+	display: flex;
+}
+.sale_offer div{
+	flex-basis: 50%;
+}
+.sale_offer img{
+	width: 100%;
+}
+.partners{
+	display: flex;
+	flex-wrap: wrap;
+}
+.partners_first{
+	flex-basis: 50% !important;
+}
+.partners_first img{
+	width: 100%;
+}
+.partners div{
+	flex-basis: 25%;
+}
+.partners img{
+	width: 100%;
+}
+.coupon_corner{
+	display: flex;
+	margin-top: 20px;
+}
+.coupon_corner img{
+	width: 100%;
+}
+.coupon_corner_flat{
+	display: flex;
+}
+.coupon_corner_flat div{
+	flex-basis: 50%;
+}
+
+.coupon_corner_flat img{
+	width: 100%;
+}
+.winter{
+	display: flex;
+	margin-top: 20px;
+}
+.winter img{
+	width: 100%;
+}
+.categories{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.categories div{
+	flex-basis: 16%;
+	flex-grow: 1;
+}
+.categories img{
+	width: 100%;
+}

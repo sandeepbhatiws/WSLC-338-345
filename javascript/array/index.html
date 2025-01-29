@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Array in JavaScript</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        var a = [];     // empty array
+        var b = new Array();   // empty array
+
+
+        a[0] = 'Ram';
+        a[1] = 'Rahul';
+        // console.log(a[1]);
+        // console.log(b);
+
+
+        var userInfo = ['Sandeep Bhati','sandeep@gmail.com',1234567890,'125 Jodhpur', true];
+
+        userInfo[8] = 'sandeepbhati@gmail.com';
+
+        // console.log(userInfo[1].length);
+        // console.log(userInfo);
+
+
+        var userInfo = ['Sandeep Bhati','sandeep@gmail.com',1234567890,'125 Jodhpur'];
+
+        userInfo.push('Web Developer','Hello');
+
+        userInfo.pop();
+
+        for(var i = 0; i < userInfo.length; i++){
+            document.write(userInfo[i]+'</br>');
+        }
+
+        
+
+    </script>
+</html>

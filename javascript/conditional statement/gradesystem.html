@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Grade System </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+
+        var english = Number(prompt('Enter the marks of english out of 100'));
+        var maths   = Number(prompt('Enter the marks of maths out of 100'));
+        var hindi   = Number(prompt('Enter the marks of hindi out of 100'));
+
+        var total = 300;
+        var percentage = ((english+maths+hindi)/total)*100;
+
+        if(english > 100 || hindi > 100 || maths > 100){
+            document.write('Input Marks Invalid');
+        } else if(percentage >= 60){
+            document.write('First Division');
+        } else if(percentage >=48 && percentage < 60){
+            document.write('Second Division');
+        } else if(percentage >=36 && percentage < 48){
+            document.write('Third Division');
+        } else if(percentage < 36){
+            document.write('Fail');
+        } else {
+            document.write('Invalid Value');
+        }
+
+    </script>
+</html>

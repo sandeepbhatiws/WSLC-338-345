@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image</title>
+    <style>
+        .row{
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+        .row input{
+            padding: 10px 15px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .output{
+            width: 500px;
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin-top: 15px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <input type="text" onkeyup="copyCut(this)">
+    </div>
+    <div class="output" id="output">
+    </div>
+
+
+    <script>
+        function copyCut(input){
+            console.log(input.value);
+            // document.querySelector('.output').innerText = input.value;
+            // document.getElementById('output').innerText = input.value;
+
+            var data = document.getElementsByClassName('output');
+            data[0].innerText = input.value;
+        }
+    </script>
+</body>
+</html>

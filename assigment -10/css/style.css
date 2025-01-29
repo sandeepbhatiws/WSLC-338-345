@@ -1,0 +1,52 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+body{
+	font-family: arial;
+}
+.main-div{
+	width: 100%;
+}
+.wscubetech{
+	width: 100%;
+	background-image: url('../images/spotlight-bg.webp');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+.row{
+	width: 1200px;
+	border: 0px solid red;
+	margin: auto;
+	color: white;
+	text-align: center;
+	padding: 80px 30px;
+	box-sizing: border-box;
+}
+.row1 h1{
+	padding-bottom: 20px;
+	font-size: 44px;
+}
+.row1 p{
+	font-size: 18px;
+}
+.row2{
+	padding-top: 50px;
+}
+.rowcolumn{
+	float: left;
+	width: 25%;
+}
+.rowcolumn h2{
+	padding-bottom: 20px;
+	font-size: 36px;
+}
+.clear{
+	clear: both;
+}
+.border{
+	border-right: 1px solid gray;
+	box-sizing: border-box;
+}

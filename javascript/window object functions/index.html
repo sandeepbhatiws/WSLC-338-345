@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Functions</title>
+    <style>
+        .row{
+            padding-top: 50px;
+        }
+        .display{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>Set Time Out</button>
+    <button>Clear Time Out</button>
+
+    <button>Set Intervel</button>
+    <button>Clear Intervel</button>
+
+
+    <div class="row  display">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla possimus, veritatis nobis perspiciatis ut ex natus accusamus a velit laboriosam placeat quidem maiores quos vero dolor fugit cum. Nesciunt?
+    </div>
+
+    <script>
+        function data(){
+            // document.querySelector('.row').style.display = 'block';
+            document.querySelector('.row').classList.toggle('display');
+        }
+
+        setTimeout(data,5000);
+
+
+        // setInterval(() => {
+        //     console.log('welcome');
+        // }, 2000);
+
+        setInterval(data, 2000);
+    </script>
+</body>
+</html>

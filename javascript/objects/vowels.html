@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function vowelNames(){
+            const indianNames = [ "Arjun", "Vinita", "Ravi", "Nisha", "Ishan", "Priya", "Veer", "Siddharth", "Anika", "Karan", "Ayesha", "Rahul", "Uma", "Vikram", "Neha", "Deepak", "Kavita", "Aditya", "Divya", "Rohan"];
+
+            var vowels = ['a','e','i','o','u'];
+
+            var newArray = [];
+
+            var data;
+            for(data of indianNames){
+                if(vowels.includes(data[0].toLowerCase())){
+                    if(data.length > 5){
+                        newArray.push(data);
+                        console.log(data);
+                    }
+                }
+            }
+            console.log(newArray);
+        }
+
+        // vowelNames();
+        
+
+
+        function upperName(){
+            const indianNames = [ "arjun", "vinita", "ravi", "nisha", "ishan", "priya", "veer", "siddharth", "anika", "karan", "ayesha", "rahul"];
+
+            var data = indianNames.map((v) => {
+                // console.log(v.slice(1));
+                var a = v[0].toUpperCase() + v.slice(1);
+                return a;
+            })
+
+            console.log(data);
+        }
+
+        upperName();
+
+        
+
+
+        
+
+    </script>
+</body>
+</html>

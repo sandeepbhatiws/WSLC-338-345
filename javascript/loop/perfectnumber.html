@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+       <title>while Loop</title>
+   </head>
+           
+   <body>
+           
+   </body>
+   <script>
+        var number = parseInt(prompt('Enter the number'));
+        var sum = 0;
+
+        for(i =1; i < number; i++){
+            if((number%i) == 0){
+                sum = sum + i;
+            }
+        }
+
+
+        if(number == sum){
+            document.write('Perfect Number');
+        } else {
+            document.write('Not a Perfect Number');
+        }
+   </script>
+           
+</html>

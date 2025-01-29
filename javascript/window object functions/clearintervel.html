@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Functions</title>
+    <style>
+        .row{
+            padding-top: 50px;
+        }
+        .display{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="counterStart">Set Intervel</button>
+    <button id="counterStop">Clear Intervel</button>
+
+    <div class="row">
+        0
+    </div>
+
+    <script>
+
+        var counter = 0; 
+        var x = '';
+
+        document.getElementById('counterStart').addEventListener('click',() => {
+            x = setInterval(() => {
+                counter++;
+                document.querySelector('.row').innerText = counter;
+            },1000);
+        })
+
+        document.getElementById('counterStop').addEventListener('click',() => {
+            clearInterval(x);
+        })
+        
+
+        
+
+    </script>
+</body>
+</html>

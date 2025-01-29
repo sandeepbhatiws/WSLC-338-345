@@ -1,0 +1,38 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+}
+.row{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+.row h1{
+    padding: 20px;
+    font-size: 40px;
+}
+.date{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.outer_date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.outer_date div{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    flex-basis: 23%;
+    padding: 100px 0px;
+    margin: 1%;
+    border-radius: 15px;
+}

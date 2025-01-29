@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Magic Box </title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .main {
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+           
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 0.1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: dimgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">1</div>
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">2</div>
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">3</div>
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">4</div>
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">5</div>
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">6</div>
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">7</div>
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">8</div>
+        <div class="box" onmouseenter="change_bg(this)" onmouseout="change_defalt_bg(this)">9</div>
+    </div>
+</body>
+<script>
+    var numbers = [];
+    function change_bg(data){
+        text = data.innerText;
+
+        if(numbers.length < 9){
+            data.style.backgroundColor = 'red';
+        }
+
+        if(numbers.includes(text)){
+        } else {
+            numbers.push(text);
+        }
+        console.log(numbers);
+    }
+    
+    function change_defalt_bg(data){
+        data.style.backgroundColor = '';
+    }
+</script>
+</html>

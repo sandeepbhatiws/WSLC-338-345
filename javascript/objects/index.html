@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        var user1 = {
+            email : 'sandeep@gmail.com',
+            name : 'Sandeep',
+            mobile_number : 1234567890
+        }
+
+        var userData = [
+            {
+                email : 'sandeep@gmail.com',
+                name : 'Sandeep',
+                mobile_number : 1234567890
+            },
+            {   
+                name : 'Rohit',
+                email : 'rohit@gmail.com',
+                mobile_number : 987654321
+            },
+            user1,
+            user1,
+            user1
+        ];
+
+        // console.log(user1['name']);
+
+        // console.log(userData[1]['name']);
+        
+        // for(var i = 0; i < userData.length; i++){
+        //     if(userData[i]['email'] == 'sandeep@gmail.com'){
+        //         document.write(userData[i]['name']+'<br>');
+        //     }
+        // }
+
+        userData.forEach( (v,i) => {    // v will return the data of array
+                                        // i will return the index of array
+            console.log(i);
+            document.write(userData[i]['name']+'<br>');
+            // document.write(v['name']+'<br>');
+
+        })
+
+        // document.write(userData[0]['name']+'<br>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.row{
+    width: 1200px;
+    margin: auto;
+}
+.heading{
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+}
+.quesanswer{
+    border:1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.question{
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+.question span{
+    float: right;
+    font-size: 24px;
+}
+.answer{
+    padding: 15px;
+}
+.display{
+    display: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function nonReapeting(){
+            var str = 'hello worldh';
+            var result = '';
+
+            var chracterCount = {};
+
+            for(var data of str){
+                chracterCount[data] = (chracterCount[data] || 0) + 1;
+            }
+
+            for(var data of str){
+                if(chracterCount[data] == 1){
+                    var result = data;
+                    // break;
+                }
+            }
+
+            console.log(result);
+        }
+
+        nonReapeting();
+        
+
+
+
+
+
+
+        
+
+
+        
+
+    </script>
+</body>
+</html>

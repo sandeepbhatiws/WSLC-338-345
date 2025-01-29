@@ -1,0 +1,33 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	
+}
+
+@media only screen and (min-width: 427px) and (max-width: 768px){
+	.number_content h2{
+		font-size: 24px;
+	}
+	.number_content p{
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 426px){
+	.numbers{
+		flex-wrap: wrap;
+	}
+	.header{
+		flex-direction: column;
+	}
+	.header_right{
+		margin-top: 15px;
+	}
+	.number_content{
+		padding: 15px;
+		box-sizing: border-box;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 376px){
+	.numbers{
+		justify-content: center;
+	}
+}

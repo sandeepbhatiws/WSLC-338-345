@@ -1,0 +1,15 @@
+*{
+	text-decoration: none;
+}
+.header{
+	background: #E21D24;
+	color: white;
+	z-index: 9;
+}
+.logo{
+	width: 260px;
+}
+.accordion-button:not(.collapsed){
+	background-color: #E21D24 !important;
+	color: white !important;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+       <title>Even odd Number</title>
+   </head>
+           
+   <body>
+           
+   </body>
+   <script>
+        var number = parseInt(prompt('Enter the number ?'));
+        var evensum = 0;
+        var oddsum = 0;
+
+        for(var i =1; i<=number; i++){
+            console.log(i);
+            if((i%2) == 0){
+                evensum += i;   // evensum = evensum + i;
+                // document.write(i+' is Even Number <br>');
+            } else{
+                oddsum += i;   // oddsum = oddsum + i;
+                // document.write(i+' is Odd Number <br>');
+            }
+        }
+
+        document.write('total sum of even number - '+evensum+'<br>');
+        document.write('total sum of odd number - '+oddsum+'<br>');
+   </script>
+           
+</html>

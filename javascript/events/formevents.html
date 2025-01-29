@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image</title>
+    <style>
+        .row{
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+        .row input{
+            padding: 10px 15px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .output{
+            width: 500px;
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin-top: 15px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <input type="text" onfocus="copyCut(this)">
+    </div>
+
+    <div class="row">
+        <input type="text" onblur="copyCut(this)">
+    </div>
+
+    <div class="row">
+        <select onchange="copyCut(this)">
+            <option>HTML</option>
+            <option>HTML 5</option>
+            <option>CSS</option>
+            <option>CSS 3</option>
+        </select>
+    </div>
+
+
+    <script>
+        function copyCut(){
+            console.log('Event is working Fine');
+        }
+    </script>
+</body>
+</html>

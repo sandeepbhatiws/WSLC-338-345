@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function getData(){
+            // console.log('Hello');
+            return 5;
+        }
+        var result = getData();
+
+        // console.log(result);
+
+
+
+        function add(x,y){   // you can take same parameter name or you can take different parameter name 
+            // a = x   and b = y
+
+            var c = x + y;
+            return c;
+        }
+
+        function multiple(){
+            var a = Number(prompt('Enter the value'));
+            var b = Number(prompt('Enter the value'));
+
+            var c = add(a, b);
+            var output = c * 5;
+            console.log(output);
+
+        }
+
+        function minus(){
+            var a = Number(prompt('Enter the value'));
+            var b = Number(prompt('Enter the value'));
+
+            var c = add(a, b);
+            var output = c - 5;
+            console.log(output);
+
+        }
+
+        minus();
+
+    </script>
+</body>
+</html>

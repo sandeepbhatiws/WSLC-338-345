@@ -92,11 +92,14 @@ export default function Header() {
                         </div>
                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                             <div className="flex shrink-0 items-center">
-                                <img
-                                    alt="Your Company"
-                                    src="https://www.wscubetech.com/images/ws-cube-white-logo.svg"
-                                    className="h-8 w-auto"
-                                />
+                                <Link to="/">
+                                    <img
+                                        alt="Your Company"
+                                        src="https://www.wscubetech.com/images/ws-cube-white-logo.svg"
+                                        className="h-8 w-auto"
+                                    />
+                                </Link>
+                                
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">

@@ -3,6 +3,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import { CommonContext } from '../ContextAPI/Context'
+import { ToastContainer } from 'react-toastify'
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
@@ -76,7 +77,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            
+            <ToastContainer/>
 
             <Disclosure as="nav" className="bg-gray-800">
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

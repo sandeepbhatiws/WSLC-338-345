@@ -1,12 +1,35 @@
 import React from 'react'
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
+import { getDatabase, ref, set } from "firebase/database";
+import app from '../config/firebase';
+import { toast } from 'react-toastify';
 
 export default function AddQuiz() {
+
+    const formHandler = (event) => {
+        event.preventDefault();
+
+        const data = {
+            question : event.target.question.value,
+            option_1 : event.target.option_1.value,
+            option_2 : event.target.option_2.value,
+            option_3 : event.target.option_3.value,
+            option_4 : event.target.option_4.value,
+            correct_answer : event.target.correct_answer.value,
+        }
+
+        const db = getDatabase(app);
+        set(ref(db, 'quizzess/' + Date.now()), data);
+
+        event.target.reset();
+        toast.success('Add Quiz Successfully !!');
+    }
+
     return (
         <>
             <div className='w-[1200px] mx-auto'>
-                <form autoComplete="off">
+                <form autoComplete="off" onSubmit={formHandler}>
                     <div className='text-center text-3xl m-6'>
                         <h2 className="font-semibold text-gray-900">Add Quiz</h2>
                     </div>

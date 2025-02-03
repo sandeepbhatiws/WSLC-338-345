@@ -16,16 +16,10 @@ export default function ViewQuiz() {
 
       var finalData = [];
       for(var index in data){
-        // var finalData = [data[index], ...quizData];
-        
         finalData.push(data[index]);
       }
 
-      setQuizData(finalData);
-      
-
-
-      // updateStarCount(postElement, data);
+      setQuizData([...finalData]);
     });
   },[]);
 
@@ -69,7 +63,7 @@ export default function ViewQuiz() {
                 ?
                   quizData.map((v,i) => {
                     return(
-                      <QuizListing key={i}/>
+                      <QuizListing key={i} quizData={v} index={i}/>
                     )
                   })
                   

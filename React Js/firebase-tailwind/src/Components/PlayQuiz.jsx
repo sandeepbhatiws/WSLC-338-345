@@ -10,7 +10,7 @@ export default function PlayQuiz() {
 
   useEffect(() => {
     if(!isLogin){
-      navigate('/');
+      navigate('/login');
     }
   },[]);
 
